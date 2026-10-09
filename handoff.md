@@ -134,11 +134,13 @@
 
 ## 7. 当前 Git 状态
 
-- 当前分支：`master`
+- 当前分支：`site-initial`
 - 本次网站版本提交：`526a346 Add project record and simplify site UI`
 - 本次提交包含：简约 UI、教育经历修正、实验室项目页、公开版报告、脱敏图片和本交接文档
 - `.kiro/` 当前未跟踪，已明确排除，没有加入网站提交
-- 尚未配置或推送远程仓库
+- 已配置远程仓库：`https://github.com/littlesheep920/personal-digital-garden`
+- 已创建推送分支：`site-initial`
+- GitHub 443 端口连接超时，首次推送尚未完成
 
 不要直接推送到远程或保护分支。后续如需提交，先检查是否应排除 `.kiro/`；如需发布到 GitHub Pages，先获得用户明确要求。
 
@@ -152,6 +154,7 @@
 - 公开报告和项目详情页仍包含 OpenMV、UART、PID、测试结果等核心内容
 - 网站身份信息已统一为 2023级本科电子信息工程、2027级信息与通信工程硕士
 - 当前网站版本已提交到 Git，`.kiro/` 未加入
+- 远程仓库地址已绑定，但 `git ls-remote` 因 GitHub 443 连接超时失败
 
 尚未完成：
 
@@ -159,6 +162,7 @@
 - 补充真实邮箱和 GitHub
 - 补充演示视频（当前为待补充入口）
 - 发布到 GitHub Pages
+- 将 `site-initial` 分支推送到已配置的 GitHub 仓库
 
 ## 9. 推荐后续顺序
 
@@ -166,8 +170,9 @@
 2. 根据实际阅读感受继续微调 `styles.css`，优先可读性，不增加装饰
 3. 补充真实邮箱和 GitHub（由用户提供后再写入）
 4. 确认脱敏结果和文字事实无误
-5. 如需发布，再配置远程仓库并发布到 GitHub Pages
-6. 后续内容增多后，再考虑 Markdown + Astro/Hugo/Eleventy，不要现在引入后端和数据库
+5. GitHub 网络恢复后，推送 `site-initial` 到已配置的远程仓库
+6. 如需发布，再配置 GitHub Pages
+7. 后续内容增多后，再考虑 Markdown + Astro/Hugo/Eleventy，不要现在引入后端和数据库
 
 ## 10. 强制维护流程
 
@@ -197,3 +202,6 @@
 - 将网站当前版本提交为 `526a346 Add project record and simplify site UI`
 - 明确排除 `.kiro/`，未执行远程推送
 - 按维护流程同步更新本文件
+- 绑定远程仓库 `https://github.com/littlesheep920/personal-digital-garden`
+- 创建非保护分支 `site-initial`
+- 因 GitHub 443 端口连接超时，推送暂未完成
